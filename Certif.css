@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+*
+{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+
+li[a], a,button, .Partenaire
+{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 1em;
+	color: #edf0f1;
+	text-decoration: none;
+	background-color: none;
+}
+
+header
+{
+	
+	height: 170px;
+	background-color: #24252A;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+}
+
+#logo2
+{
+  width: 400px;
+}
+
+#logo
+{
+	cursor:pointer;
+	border-radius: 50%;
+	border: 5px solid #66ff99;
+  	background-color: white;
+  	padding: 5px;
+ 	width: 120px;
+ 	transition: box-shadow 0.7s, transform 2s;
+
+}
+
+#logo:hover 
+{
+  	box-shadow: 0 0 2px 15px rgba(0, 140, 186, 0.5);
+  	transform: rotate(380deg);
+}
+
+.nav_links
+{
+
+	list-style:none;
+}
+
+.nav_links li
+{
+	background-color: #24252A;
+	display:inline-block;
+	padding: 0 20px;
+
+}
+
+.nav_links li a, .Partenaire
+{
+	transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover, .Partenaire:hover
+{
+	color: #0088a9;
+}
+
+button
+{
+
+	cursor:pointer;
+	padding:9px 25px;
+	background-color: rgba(0,136,169,1);
+	border: none;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover
+{
+	background-color: rgba(0,136,169,0.7);
+}
+
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #21363F;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #edf0f1;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+
+
+
+
+
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  display: inline-block;
+  max-width: 800px;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 250px;
+  border: 6px solid #101540;
+  }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.textBlanc {
+  color: #101540;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0.5%;
+  width: 100%;
+  text-align: center;
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.numbertext1 {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  border: 2px #101540 ;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+footer
+{
+	text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  color: #edf0f1;
+	height: 170px;
+	background-color: #24252A;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+}
+
+
+
+
+
+
+
