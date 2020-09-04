@@ -9,41 +9,52 @@
     <body>
     	 
       <?php
-			  session_start();
-    		session_regenerate_id(true);
+			    session_start();
+    		  session_regenerate_id(true);
 
-    		// We connect to our data base via our function in an external files
-    		require_once "T.pdo.php";
+    		  // We connect to our data base via our function in an external files
+    		  require_once "T.pdo.php";
 
-    		// We call our personnal librairy
-			  require_once "utilitaire.php";
-		  ?>
-
-		  <!-- We call our Header -->
-		  <?php
-      		include('header.php');
+    		  // We call our personnal librairy
+			    require_once "utilitaire.php";
+    		  include('header.php');
       		// Flash Message if log-in, or not, or specification on what is wrong with users input
-			  flashMessage();
+          flashMessage();
+
     	?> 
 
-    	<div class ="Text1" >
+    <?php
+    // Display profile information from the eponymic table.
+    
+$stmt = $pdo->prepare("SELECT FirstName,LastName,Email,Password,PhoneNumber FROM users  WHERE user_id = :user_id");
+$stmt -> execute(array
+(
+  ':user_id' => $_SESSION['user_id']
+));
 
-      <table class="Tableau1" summary="Information Personnel">
-      <thead class="Perso" ></thead>
-      <tfoot class="Perso"></tfoot>
-      <tbody>
-      	<tr>
-      <td class="Perso">Nom de Famille :<div class = "Info1"></div></td>
-      <td class="Perso">Prénom :<div class = "Info2"></div></td>
-      <td class="Perso">Adresse mail : <div class = "Info3"> </div></td>
-        </tr>
-        <tr>
-        	<td class="Perso">Identifiant: <div class = "Info4"> </div></td>
-        	<td class="Perso">Numéro de téléphone : <div class = "Info5"> </div></td>
-        	<td class="Perso">Identifiants banquaires : <div class = "Info6"> </div></td>
-        </tr>
-	</tbody>
-  	</table>
+while ( $row = $stmt->fetch(PDO::FETCH_ASSOC) )
+{
+  echo('<div class ="Text1" >
+
+  <table class="Tableau1" summary="Information Personnel">
+  <thead class="Perso" ></thead>
+  <tfoot class="Perso"></tfoot>
+  <tbody>
+    <tr>
+  <td class="Perso">Nom de Famille : '.htmlentities($row['LastName']).'</td>
+  <td class="Perso">Prénom : '.htmlentities($row['FirstName']).'</td>
+  <td class="Perso">Adresse mail : '.htmlentities($row['Email']).'</td>
+    </tr>
+    <tr>
+      <td class="Perso">Mot de Passe: '.htmlentities($row['Password']).'</td>
+      <td class="Perso">Numéro de téléphone : '.htmlentities($row['PhoneNumber']).'</td>
+      <td class="Perso">Identifiants banquaires : Pour votre sécurité nous ne les enregistrons pas !</td>
+    </tr>
+</tbody>
+</table>');
+}
+?>
+
 <br/> <br/>
       <table summary="Historique de Donnation">
 <caption> </caption>
