@@ -1,9 +1,12 @@
 # GDC Gestionnaire de Don Certifié
 
+Cette application est encore en phase de prototype : 
 
-> This is Complete Crud (Create, Read, Update, Delete) Web Application !
+Nous souhaitons, par ce projet, aider les associations humanitaires à se développer correctement. Pour cela nous souhaitons résoudre un problème en particulier lié à la réception des dons pour les associations d’aide humanitaire par des particuliers par le biais du numérique. 
+Nous savons qu’il existe actuellement des requêtes de dons numériques capables de récolter les dons à travers des moyens de payement en ligne. En conséquence, l’objectif sera d’améliorer les services de dons en ligne en créant nous-mêmes une nouvelle plateforme numérique capable de répondre aux besoins des associations d’aide humanitaire. 
 
-***What it's looks like ?***
+
+***Vidéo de présentation***
 
 ![Recordit GIF](Screenshot_ReadMe/Presentation2.gif)
 
