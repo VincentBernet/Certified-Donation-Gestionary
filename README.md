@@ -14,9 +14,9 @@ Inserer la teaser !
 
 ## Table of Contents 
 
-- [Instalation](#installation)
-- [Features](#features)
-- [Team](#team)
+- [Installation](#installation)
+- [Fonctionnalités](#features)
+- [Equipe](#team)
 - [Contact](#Contact)
 
 ---
