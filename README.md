@@ -8,7 +8,7 @@ Nous savons qu’il existe actuellement des requêtes de dons numériques capabl
 
 ***Vidéo de présentation***
 Inserer la teaser !
-[![Alt text](Ressource-Read-Me/Capture.jpg)](https://www.youtube.com/watch?v=J5qV5SJTtuc&ab_channel=VincentBernet)
+[![Alt text](Ressource-Read-Me/Capture.JPG)](https://www.youtube.com/watch?v=J5qV5SJTtuc&ab_channel=VincentBernet)
 
 ---
 
