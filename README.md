@@ -8,7 +8,7 @@ Nous savons qu’il existe actuellement des requêtes de dons numériques capabl
 
 ***Vidéo de présentation***
 Inserer la teaser !
-![Recordit GIF](Screenshot_ReadMe/Presentation2.gif)
+![Recordit GIF](Ressource-Read-Me/TeaserGDC.mp4)
 
 ---
 
