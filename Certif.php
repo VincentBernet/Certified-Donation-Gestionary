@@ -7,7 +7,7 @@
 	</head>
 
 	<body>
-
+	<div id="GlobalContainer">
 		<?php
 			session_start();
     		session_regenerate_id(true);
@@ -90,7 +90,7 @@
 				dots[slideIndex - 1].className += ' active';
 			}
 		</script>
-
+		</div>
 		<footer>
 			<img id="logo2" src="Image/GDC.png" alt="logo Transverse" /> Plateforme
 			de Don et de Certification d'organisation humanitaire, méthode de

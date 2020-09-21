@@ -16,15 +16,44 @@ button,
 	text-decoration: none;
 	background-color: none;
 }
+body {
+	font-family: Verdana, sans-serif;
+	margin: 0;
+	position: relative;
+	min-height: 100vh;
+}
 
+#GlobalContainer {
+	padding-bottom: 25vmin; /* Footer height */
+}
 header {
-	height: 170px;
+	height: 22vmin;
 	background-color: #24252a;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 30px 10%;
 }
+
+footer {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 1em;
+	color: #edf0f1;
+	text-decoration: none;
+	background-color: none;
+	height: 25vmin;
+	background-color: #24252a;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
 #logo2 {
 	width: 400px;
 }
@@ -34,7 +63,7 @@ header {
 	border: 5px solid #66ff99;
 	background-color: white;
 	padding: 5px;
-	width: 120px;
+	width: 16vmin;
 	transition: box-shadow 0.7s, transform 2s;
 }
 
@@ -165,11 +194,6 @@ button:hover {
 	}
 }
 
-body {
-	font-family: Verdana, sans-serif;
-	margin: 0;
-}
-
 .mySlides {
 	display: none;
 }
@@ -180,9 +204,9 @@ img {
 /* Slideshow container */
 .slideshow-container {
 	display: inline-block;
-	max-width: 800px;
+	max-width: 55%;
 	position: relative;
-	left: 25%;
+	left: 22%;
 	right: auto;
 	border: 6px solid #101540;
 }
@@ -297,22 +321,6 @@ img {
 	.text {
 		font-size: 11px;
 	}
-}
-
-footer {
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-	font-size: 1em;
-	color: #edf0f1;
-	text-decoration: none;
-	background-color: none;
-	height: 170px;
-	background-color: #24252a;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 30px 10%;
 }
 
 .forbiden:hover {

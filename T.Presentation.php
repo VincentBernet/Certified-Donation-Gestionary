@@ -10,7 +10,7 @@
     <script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
     </head>
     <body>
-
+    <div id="GlobalContainer">
     <?php
     session_start();
       session_regenerate_id(true);
@@ -140,7 +140,7 @@
     </script>
     </div>
 
-   
+    </div>
     <footer>
          <img id="logo2" src="Image/GDC.png" alt="logo Transverse" /> Plateforme de Don et de Certification d'organisation humanitaire, méthode de payement associatif innovant
     </footer>

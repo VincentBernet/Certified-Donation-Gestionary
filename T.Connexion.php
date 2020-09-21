@@ -15,6 +15,7 @@
 <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=IbHxtKnoGJ5PeANnFZGQDbFMQEeuhm_yUrsyNKYeezdbsDtwLXCuSI1FBKxWtnWf6qYKgyB7zyfbRc-mgJC65mQSxCllMc33PvmY64DgYMTMDQArUFHacs7IjyvzvqsSF1rT-6HhZd_nZwJFDuOWhw" charset="UTF-8"></script></head>
 
 <body>
+<div id="GlobalContainer">
   <?php
     session_start();
     session_regenerate_id(true);
@@ -85,7 +86,7 @@
     </div>
   
     <br><br><br><br>
-
+    </div>
     <footer>
       <img id="logo2" src="Image/GDC.png" alt="logo Transverse" /> 
       Plateformede Don et de Certification d'organisation humanitaire, méthode de payement associatif innovant

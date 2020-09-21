@@ -7,7 +7,7 @@
     </head>
 
     <body>
-    	 
+    <div id="GlobalContainer">
       <?php
 			    session_start();
     		  session_regenerate_id(true);
@@ -18,7 +18,7 @@
     		  // We call our personnal librairy
 			    require_once "utilitaire.php";
     		  include('header.php');
-      		// Flash Message if log-in, or not, or specification on what is wrong with users input
+      		// Flash Message if log-in, or not, or specification on what is wàrong with users input
           flashMessage();
 
     	?> 
@@ -53,10 +53,10 @@ while ( $row = $stmt->fetch(PDO::FETCH_ASSOC) )
 </tbody>
 </table>');
 }
-?>
-
+// Display an Historique of user donnation from the donnation table.
+echo('
 <br/> <br/>
-      <table summary="Historique de Donnation">
+<table summary="Historique de Donnation">
 <caption> </caption>
 
   <thead>
@@ -76,43 +76,31 @@ while ( $row = $stmt->fetch(PDO::FETCH_ASSOC) )
      <th></th>
     </tr>
   </tfoot>
+');
 
+$stmt = $pdo->prepare("SELECT Association, Montant, Date_Don FROM don  WHERE user_id = :user_id");
+$stmt -> execute(array
+(
+  ':user_id' => $_SESSION['user_id']
+));
+
+while ( $row = $stmt->fetch(PDO::FETCH_ASSOC) )
+{
+  echo('
   <tbody>
     <tr>
      <th>Transaction Certifié</th>
-     <td>Secours Catholique</td>
-     <td>150.00 €</td>
-     <td>11/06/2020</td>
-    </tr>
-    <tr>
-     <th>Transaction Certifié</th>
-     <td></td>
-     <td></td>
-     <td></td>
+     <td>'.htmlentities($row['Association']).'</td>
+     <td>'.htmlentities($row['Montant']).'</td>
+     <td>'.htmlentities($row['Date_Don']).'</td>
     </tr>
   </tbody>
 
-  <tbody>
-    <tr>
-     <th>Transaction Certifié</th>
-     <td></td>
-     <td></td>
-     <td></td>
-    </tr>
-    <tr>
-     <th>Transaction Certifié</th>
-     <td></td>
-     <td></td>
-     <td></td>
-    </tr>
-  </tbody>
-
-</table>
-
-
-
-
-    </div>
+');
+}
+echo('</table>');
+?>
+    </div></div>
     	 <footer>
          <img id="logo2" src="Image/GDC.png" alt="logo Transverse" /> Plateforme de Don et de Certification d'organisation humanitaire, méthode de payement associatif innovant
     </footer>
