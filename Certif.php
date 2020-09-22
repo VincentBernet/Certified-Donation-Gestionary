@@ -92,9 +92,9 @@
 		</script>
 		</div>
 		<footer>
-			<img id="logo2" src="Image/GDC.png" alt="logo Transverse" /> Plateforme
+			<img id="logo2" src="Image/GDC.png" alt="logo Transverse" /><span class="Partenaire"> Plateforme
 			de Don et de Certification d'organisation humanitaire, méthode de
-			payement associatif innovant
+			payement associatif innovant</span>
 		</footer>
 	</body>
 </html>

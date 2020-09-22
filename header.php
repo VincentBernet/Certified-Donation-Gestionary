@@ -29,14 +29,14 @@
 						
 						if (isset($_SESSION["Email"]))
 						{
-							echo('<li><a href="T.Donation.php"> Donation Rapide </a></li>');
+							echo('<li><a href="T.Donation2.php"> Donation Rapide </a></li>');
 							echo('<li><a href="T.Compte.php"> Mon Compte </a></li>');
 							echo('<li><a href="T.Déconnexion.php"> Déconnexion </a></li>');
 							
 						}
 						else
 						{
-							echo('<li><a href="T.Donation.php" class="forbiden"> Donation Rapide </a></li>');
+							echo('<li><a href="T.Donation2.php" class="forbiden"> Donation Rapide </a></li>');
 							echo('<li><a href="T.Connexion.php"> Connexion </a></li>');
 							echo('<li><a href="T.Inscription.php"> Inscription </a></li>');
 						}

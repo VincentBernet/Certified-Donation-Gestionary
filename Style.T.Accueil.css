@@ -11,7 +11,7 @@ button,
 .Partenaire {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	font-size: 1em;
+	font-size: 2vmin;
 	color: #edf0f1;
 	text-decoration: none;
 	background-color: none;
@@ -48,14 +48,14 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 30px 10%;
+	padding: 2% 8% 2% 8%;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 }
 
 #logo2 {
-	width: 400px;
+	height: 16vmin;
 }
 #logo {
 	cursor: pointer;

@@ -53,8 +53,9 @@
   <div id="Cforum">
     <form method="post">
       <p>
+      
         <input class="form-control" name="Association" type="text" placeholder="Association" required /><br>
-        <input class="form-control" name="NumCarte" type="number" placeholder="Numéro de Carte •••• •••• •••• •••• required /><br>
+        <input class="form-control" name="NumCarte" type="number" placeholder="Numéro de Carte •••• •••• •••• ••••" required /><br>
         <input class="form-control" name="DateExpi" type="text" placeholder="Date d'Expiration" required /><br>
         <input class="form-control" name="Titulaire" type="text" placeholder="Titulaire" required /><br>
         <input class="form-control" name="Crypto" type="password" placeholder="Cryptogrammme visuel" required /><br>
@@ -69,8 +70,10 @@
       
 <br/>
 </div>
-      <footer>
-         <img id="logo2" src="Image/GDC.png" alt="logo Transverse" /> Plateforme de Don et de Certification d'organisation humanitaire, méthode de payement associatif innovant
-    </footer>
+<footer>
+			<img id="logo2" src="Image/GDC.png" alt="logo Transverse" /><span class="Partenaire"> Plateforme
+			de Don et de Certification d'organisation humanitaire, méthode de
+			payement associatif innovant</span>
+		</footer>
     </body>
 </html>

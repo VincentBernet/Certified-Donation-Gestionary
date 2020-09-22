@@ -87,10 +87,11 @@
   
     <br><br><br><br>
     </div>
-    <footer>
-      <img id="logo2" src="Image/GDC.png" alt="logo Transverse" /> 
-      Plateformede Don et de Certification d'organisation humanitaire, méthode de payement associatif innovant
-	</footer>
+		<footer>
+			<img id="logo2" src="Image/GDC.png" alt="logo Transverse" /><span class="Partenaire"> Plateforme
+			de Don et de Certification d'organisation humanitaire, méthode de
+			payement associatif innovant</span>
+		</footer>
 </body>
 
 </html>
