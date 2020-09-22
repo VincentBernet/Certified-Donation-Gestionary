@@ -111,7 +111,7 @@ COMMIT;
 
 4] Only if you are on Mac : Go to pdo.php file and change the port number to 8808 <br/>
 
-&nbsp;&nbsp;&nbsp; ![Pdo.php](Ressource-Read-Me/Pdo.JPG)
+&nbsp;&nbsp;&nbsp; ![Pdo.php](Ressource-Read-Me/pdo.JPG)
 
 5] Run the index.php file on your browser, if no SQL error's statement pop everything work !
 If there is some error check your database and your port number.
