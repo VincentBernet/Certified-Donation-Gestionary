@@ -201,7 +201,8 @@ span.price {
           
         </div>
         <label>
-          <input type="checkbox" checked="checked" name="sameadr"> Je souhaite recevoir ma facture par adresse mail
+          <input type="checkbox" checked="checked" name="sameadr" > 
+          <span style="font-weight:600;"> Je souhaite recevoir ma facture par adresse mail, j'autorise GDC à s'occuper de la redevance fiscale.</span>
         </label>
         <input type="submit" value="Continue to checkout" class="btn">
       </form>

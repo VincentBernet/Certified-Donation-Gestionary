@@ -390,3 +390,8 @@ tr:hover {
 	padding: 5px;
 	text-align: left;
 }
+
+#Care {
+	color: red;
+	font-style: Tahoma;
+}
