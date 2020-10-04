@@ -38,7 +38,7 @@
   border-radius: 3px;
 }
 
-input[type=text] {
+input[type=text],select {
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
@@ -117,7 +117,7 @@ span.price {
       	// Flash Message if log-in, or not, or specification on what is wrong with users input
         flashMessage();
         
-        if(isset($_POST["Association"]))
+        if(isset($_POST["Association"])&&(isset($_POST['Association']))&&(isset($_POST['NumCarte']))&&(isset($_POST['DateExpi']))&&(isset($_POST['Titulaire']))&&(isset($_POST['Crypto']))&&(isset($_POST['Montant'])))
         {
           $sql = "INSERT INTO don(user_id,Association,NumCarte,DateExpi,Titulaire,Crypto,Montant) VALUES (:user_id,:Association,:NumCarte,:DateExpi,:Titulaire,:Crypto,:Montant)";
           $result1 = $pdo->prepare($sql);
@@ -136,8 +136,11 @@ span.price {
           header("Location: T.Accueil.php");
           return;
         }
+        else
+        {
+          echo('hihi');
+        }
         
-
     	?> 
 <br><br>
 <div class="row">
@@ -178,8 +181,15 @@ span.price {
               <i class="fa fa-cc-mastercard" style="color:red;"></i>
               <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
+
             <label for="fname"><i class="fa fa-user"></i> Association</label>
-            <input type="text" id="fname" name="Association" placeholder="Don du Sang">
+            <select type="text" id="fname" name="Association" >
+              <option value="Restos du coeur" >Restos du coeur</option>
+              <option value="Societe de Saint-Vincent-de-Paul">Societe de Saint-Vincent-de-Paul</option>
+              <option value="Don du Sang">Don du Sang</option>
+              <option value="Action contre la faim">Action contre la faim</option>
+            </select>
+
             <label for="fname"><img src="Image/dona.png" style="width: 3vmin;"/> Montant de la Donation</label>
             <input type="text" id="fname" name="Montant" placeholder="50.00 €">
             <label for="cname">Titulaire</label>
