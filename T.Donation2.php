@@ -117,8 +117,24 @@ span.price {
       	// Flash Message if log-in, or not, or specification on what is wrong with users input
         flashMessage();
         
-        if(isset($_POST["Association"])&&(isset($_POST['Association']))&&(isset($_POST['NumCarte']))&&(isset($_POST['DateExpi']))&&(isset($_POST['Titulaire']))&&(isset($_POST['Crypto']))&&(isset($_POST['Montant'])))
+        if(isset($_POST["Association"])&&(isset($_POST['NumCarte']))&&(isset($_POST['DateExpi']))&&(isset($_POST['Titulaire']))&&(isset($_POST['Crypto']))&&(isset($_POST['Montant'])))
         {
+          
+          if ( $_POST['Association'] == "" || $_POST['NumCarte'] == "" || $_POST['DateExpi'] == "" || $_POST['Titulaire'] == "" ||  $_POST['Crypto'] == "" ||  $_POST['Montant'] == "" )
+            {
+              $_SESSION['message']= '<p style="color:red;weight:bold; text-align:center"><br>Tout les champs de droites sont requis</p>';
+              header("Location: T.Donation2.php");
+              return;            
+            }
+            if ( ! is_numeric($_POST['NumCarte']) ) 
+              {
+                
+                $_SESSION['message']='<p style="color:red; text-align:center"><br>Votre numéro de carte, ainsi que le montant, la date d\'expiration, et votre cryptogramme visuel doivent être numérique</p>';
+                header("Location: T.Donation2.php");
+                return;    
+              }
+
+
           $sql = "INSERT INTO don(user_id,Association,NumCarte,DateExpi,Titulaire,Crypto,Montant) VALUES (:user_id,:Association,:NumCarte,:DateExpi,:Titulaire,:Crypto,:Montant)";
           $result1 = $pdo->prepare($sql);
           $result1->execute(array
@@ -135,13 +151,9 @@ span.price {
           $_SESSION["message"]="<div style='color:green; text-align: center;'>Your Donation has been accepted !</div>";
           header("Location: T.Accueil.php");
           return;
-        }
-        else
-        {
-          echo('hihi');
-        }
-        
+        }        
     	?> 
+
 <br><br>
 <div class="row">
   <div class="col-75">
