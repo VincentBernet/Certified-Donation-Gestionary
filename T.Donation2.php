@@ -126,14 +126,12 @@ span.price {
               header("Location: T.Donation2.php");
               return;            
             }
-            if ( ! is_numeric($_POST['NumCarte']) ) 
-              {
-                
-                $_SESSION['message']='<p style="color:red; text-align:center"><br>Votre numéro de carte, ainsi que le montant, la date d\'expiration, et votre cryptogramme visuel doivent être numérique</p>';
-                header("Location: T.Donation2.php");
-                return;    
-              }
-
+            if (strpos($_POST['DateExpi'],'/')===false)
+            {
+              $_SESSION['message']= '<p style="color:red;weight:bold; text-align:center"><br>La date d\'expiration de votre carte doit être de la forme suivante : 01/02</p>';
+              header("Location: T.Donation2.php");
+              return;    
+            }
 
           $sql = "INSERT INTO don(user_id,Association,NumCarte,DateExpi,Titulaire,Crypto,Montant) VALUES (:user_id,:Association,:NumCarte,:DateExpi,:Titulaire,:Crypto,:Montant)";
           $result1 = $pdo->prepare($sql);
@@ -204,19 +202,21 @@ span.price {
 
             <label for="fname"><img src="Image/dona.png" style="width: 3vmin;"/> Montant de la Donation</label>
             <input type="text" id="fname" name="Montant" placeholder="50.00 €">
+
             <label for="cname">Titulaire</label>
             <input type="text" id="cname" name="Titulaire" placeholder="John More Doe">
+            
             <label for="ccnum">Numéro de Carte</label>
-            <input type="text" id="ccnum" name="NumCarte" placeholder="••••  ••••  ••••  •••• ">
+            <input type="text" id="ccnum" name="NumCarte" placeholder="••••  ••••  ••••  ••••" pattern="[0-9 ]{19}">
             
             <div class="row">
               <div class="col-50">
                 <label for="expyear">Date d'Expiration</label>
-                <input type="text" id="expyear" name="DateExpi" placeholder="06/21">
+                <input type="text" id="expyear" name="DateExpi" placeholder="06/21" pattern="[0-9/]{5}">
               </div>
               <div class="col-50">
                 <label for="cvv">Cryptogrammme visuel</label>
-                <input type="text" id="cvv" name="Crypto" placeholder="•••">
+                <input type="text" id="cvv" name="Crypto" placeholder="•••" pattern="[0-9]{3}">
               </div>
             </div>
           </div>
