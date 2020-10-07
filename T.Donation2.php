@@ -33,7 +33,10 @@
 
 .container {
   background-color: #f2f2f2;
+  position:absolute;
+  right:8%;
   padding: 5px 20px 15px 20px;
+  width: 85%;
   border: 1px solid lightgrey;
   border-radius: 3px;
 }
@@ -226,13 +229,14 @@ span.price {
           <input type="checkbox" checked="checked" name="sameadr" > 
           <span style="font-weight:600;"> Je souhaite recevoir ma facture par adresse mail, j'autorise GDC à s'occuper de la redevance fiscale.</span>
         </label>
-        <input type="submit" value="Continue to checkout" class="btn">
+        <input type="submit" value="Valider votre Donation" class="btn">
       </form>
     </div>
   </div>
   </div>
-</div><br><br>
+</div><br><br><br><br><br><br>
 </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <footer>
 			<img id="logo2" src="Image/GDC.png" alt="logo Transverse" /><span class="Partenaire"> Plateforme
 			de Don et de Certification d'organisation humanitaire, méthode de

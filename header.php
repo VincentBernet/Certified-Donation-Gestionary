@@ -18,9 +18,9 @@
 							<div class="Partenaire">ONG Certifiées</div>
 							<div class="dropdown-content">
 								<a href="Certif.php"> Certification </a>
-								<a href="T.404.php">La Croix Rouge</a>
-								<a href="T.404.php">Fondation Abbé Pierre</a>
-								<a href="T.404.php">WWF</a>
+								<a href="https://www.croix-rouge.fr/" target="_blank">La Croix Rouge</a>
+								<a href="https://www.fondation-abbe-pierre.fr/en/home" target="_blank">Fondation Abbé Pierre</a>
+								<a href="https://www.worldwildlife.org/" target="_blank">WWF</a>
 							</div>
 						</div>
 					</li>
