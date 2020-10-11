@@ -6,7 +6,7 @@ Nous souhaitons, par ce projet, aider les associations humanitaires à se dével
 Nous savons qu’il existe actuellement des requêtes de dons numériques capables de récolter les dons à travers des moyens de payement en ligne. En conséquence, l’objectif sera d’améliorer les services de dons en ligne en créant nous-mêmes une nouvelle plateforme numérique capable de répondre aux besoins des associations d’aide humanitaire. 
 
 
-***Vidéo de présentation du projet à venir***
+***Vidéo de présentation du projet***
 
 [![Alt text](Ressource-Read-Me/Capture.JPG)](https://www.youtube.com/watch?v=J5qV5SJTtuc&ab_channel=VincentBernet)
 
