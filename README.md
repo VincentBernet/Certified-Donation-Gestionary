@@ -23,7 +23,7 @@ Nous savons qu’il existe actuellement des requêtes de dons numériques capabl
 
 ## Installation
 
-Premièrement you need to have a local server environment like MAMP or XAMP <br /><br />
+Premièrement vous need to have a local server environment like MAMP or XAMP <br /><br />
 1] Download the whole github folder in your htdocs folder <br />
 2] Go on your PHPmyAdmins page and create a new database named GDC <br />
 (you can use the following code : CREATE DATABASE GDC DEFAULT CHARACTER SET utf8 ;) <br />
