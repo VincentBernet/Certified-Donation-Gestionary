@@ -49,7 +49,7 @@ CREATE TABLE `don` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Table structure for tale `users`
 --
 
 CREATE TABLE `users` (
