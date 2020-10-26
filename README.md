@@ -117,7 +117,7 @@ COMMIT;
 If there is some error check your database and your port number.
 
 ## Features
-On this application i implemetended multiples featurs such as :
+On this application i implemetended multiples featurs such as 
  - Login/Register/Logout possibility linked to our DataBase
  - Complete CRUD application
  - Posibility to read/edit/delete only the profile created your own userprofile. 
