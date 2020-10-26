@@ -6,6 +6,6 @@
 session_start();
 session_destroy();
 // unset(session_id()); Was another solution to logout, but i prefer the radical one
-header("Location: T.Accueil.php");
+header("Location: T.Accueil.php?Message");
 return;
 ?>

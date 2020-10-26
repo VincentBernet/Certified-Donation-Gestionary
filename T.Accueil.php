@@ -24,6 +24,9 @@
       		include('header.php');
       		// Flash Message if log-in, or not, or specification on what is wrong with users input
 			  flashMessage();
+			  if (isset($_GET['Message'])) {
+				echo('<span style = "color:red;weight:bold;text-align:center;" >Déconnexion effectué !</span>');
+			  }
     	?> 
 
 
@@ -31,7 +34,7 @@
 		<div class="slideshow-container">
 			<div class="mySlides fade">
 				<div class="numbertext">1/3</div>
-				<a href="https://dondesang.efs.sante.fr/le-don-de-sang"
+				<a href="https://dondesang.efs.sante.fr/le-don-de-sang"  target="_blank"
 					><img src="Image/DonSang.jpg" style="width: 100%"
 				/></a>
 				<div class="textBlanc">
@@ -44,7 +47,7 @@
 				<div class="numbertext">2/3</div>
 				<a
 					href="https://www.allianceurgences.org/?reserved_tracking=20URG2SE&gclid=Cj0KCQjwnv71BRCOARIsAIkxW9EIoYIAqcV9Xf0FWQuLQ_XyGFvlMWLAmAPQAcFBgK0Emd00VId3glMaAj4nEALw_wcB"
-					><img src="Image/Cov19.jpg" style="width: 100%"
+					target="_blank" ><img src="Image/Cov19.jpg" style="width: 100%"
 				/></a>
 				<div class="text">ONG 2 Campagne de dons contre le CoronaVirus</div>
 			</div>
@@ -53,7 +56,7 @@
 				<div class="numbertext">3/3</div>
 				<a
 					href="https://www.helloasso.com/associations/actions-pour-l-education-des-enfants-au-gabon/formulaires/1/en"
-					><img src="Image/ONG.png" style="width: 100%"
+					target="_blank" ><img src="Image/ONG.png" style="width: 100%"
 				/></a>
 				<div class="textBlanc">Soutenir l'Education au Gabon</div>
 			</div>
