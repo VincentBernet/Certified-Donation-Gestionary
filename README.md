@@ -23,10 +23,10 @@ Nous savons qu’il existe actuellement des requêtes de dons numériques capabl
 
 ## Installation
 
-Premièrement vous need to have a local server environment like MAMP or XAMP <br /><br />
-1] Download the whole github folder in yor htdocs folder <br />
-2] Go on your PHPmyAdmins page and create a new database named GDC <br />
-(you can use the following code : CREATE DATABASE GDC DEFAULT CHARACTER SET utf8 ;) <br />
+Premièrement vous avez besoin d'une plateforme de serveur local comme MAMP ou XAMP <br /><br />
+1] Telecharger le dossier complet dans votre dossier "htodcs" du serveur local <br />
+2] Aller sur votre page PHPmyAdmins et créer une nouvelle database nommée GDC <br />
+(Vous pouvez copié coller le script Sql suivant : CREATE DATABASE GDC DEFAULT CHARACTER SET utf8 ;) <br />
 3] Go in Sql interface of this DataBase and copy paste the following Sql querrys : <br />
 
  ```
