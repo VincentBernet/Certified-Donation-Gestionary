@@ -132,13 +132,11 @@ On this application i implemetended multiples featurs such as
 
 > Whole application was made by me when i was getting a coursera specialisation on web developpment :
 
- <a href="https://github.com/VincentBernet.com" target="_blank">**FullStack**</a> |
+ <a href="https://github.com/VincentBernet.com" target="_blank">**Software Engineering Student**</a> |
 |:---:|
 | [![FVCproductions](https://avatars3.githubusercontent.com/u/54962581?s=300)](https://github.com/VincentBernet.com)    |
 | <a target="_blank" rel="noopener noreferrer" href="https://github.com/VincentBernet">`github.com/BernetProductions`</a> |
- <a href="https://github.com/VincentBernet.com" target="_blank">**FullStack**</a> |
-| [![FVCproductions](https://avatars3.githubusercontent.com/u/54962581?s=300)](https://github.com/VincentBernet.com)    |
-| <a target="_blank" rel="noopener noreferrer" href="https://github.com/VincentBernet">`github.com/BernetProductions`</a> |
+
 
 
 
