@@ -19,7 +19,7 @@
       require_once "T.pdo.php";
 
       // We call our personnal librairy
-    require_once "utilitaire.php";
+    require_once "Utilitaire.php";
   ?>
 
   <!-- We call our Header -->

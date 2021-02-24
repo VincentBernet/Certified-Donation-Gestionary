@@ -24,7 +24,7 @@
     require_once "T.pdo.php";
 
     // We call our personnal librairy
-    require_once "utilitaire.php";
+    require_once "Utilitaire.php";
 
 
      if ( isset($_POST['Email']) && isset($_POST['Password']) )
@@ -75,7 +75,7 @@
         <h1 style="text-align: center; font-size: 300%; font-family: Calibri; font-weight: 700;">Connexion </h1>
 
         <div id="Cforum">
-            <form method="post"> <a href="inscription.html" style="color:blue;"> Vous n'avez pas encore de compte ? Créez en un ici ! </a>
+            <form method="post"> <a href="T.Inscription.php" style="color:blue;"> Vous n'avez pas encore de compte ? Créez en un ici ! </a>
                 <p>
                     <input class="form-control" name="Email" type="text" placeholder="Email" required /><br>
                     <input class="form-control" name="Password" type="password" placeholder="Mot de Passe" required /><br>

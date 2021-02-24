@@ -16,7 +16,7 @@
     		require_once "T.pdo.php";
 
     		// We call our personnal librairy
-			require_once "utilitaire.php";
+			require_once "Utilitaire.php";
 		?>
 
 		<!-- We call our Header -->
@@ -34,31 +34,27 @@
 		<div class="slideshow-container">
 			<div class="mySlides fade">
 				<div class="numbertext">1/3</div>
-				<a href="https://dondesang.efs.sante.fr/le-don-de-sang"  target="_blank"
-					><img src="Image/DonSang.jpg" style="width: 100%"
-				/></a>
+				<a  href="https://dondesang.efs.sante.fr/le-don-de-sang"  target="_blank"> <img style="width:100%;border: 6px solid #101540;" src="Image/DonSang.jpg" alt="Blood's ONG" /> </a>
 				<div class="textBlanc">
-					Une simple donation pour améliorer la campagne de don du Sang
+					ONG 1 : Une simple donation pour améliorer la campagne de don du Sang
 					sauvera peut être un de vos proche.
 				</div>
 			</div>
 
 			<div class="mySlides fade">
 				<div class="numbertext">2/3</div>
-				<a
-					href="https://www.allianceurgences.org/?reserved_tracking=20URG2SE&gclid=Cj0KCQjwnv71BRCOARIsAIkxW9EIoYIAqcV9Xf0FWQuLQ_XyGFvlMWLAmAPQAcFBgK0Emd00VId3glMaAj4nEALw_wcB"
-					target="_blank" ><img src="Image/Cov19.jpg" style="width: 100%"
-				/></a>
-				<div class="text">ONG 2 Campagne de dons contre le CoronaVirus</div>
+				<a href="https://www.allianceurgences.org/?reserved_tracking=20URG2SE&gclid=Cj0KCQjwnv71BRCOARIsAIkxW9EIoYIAqcV9Xf0FWQuLQ_XyGFvlMWLAmAPQAcFBgK0Emd00VId3glMaAj4nEALw_wcB" target="_blank" >
+					<img class="ImageSlide" style="width:130%;border: 6px solid #101540;" src="Image/Cov19.jpg" alt="CoronaVirus's ONG" />
+				</a>
+				<div class="text">ONG 2 : Campagne de dons contre le CoronaVirus</div>
 			</div>
 
 			<div class="mySlides fade">
 				<div class="numbertext">3/3</div>
-				<a
-					href="https://www.helloasso.com/associations/actions-pour-l-education-des-enfants-au-gabon/formulaires/1/en"
-					target="_blank" ><img src="Image/ONG.png" style="width: 100%"
-				/></a>
-				<div class="textBlanc">Soutenir l'Education au Gabon</div>
+				<a href="https://www.helloasso.com/associations/actions-pour-l-education-des-enfants-au-gabon/formulaires/1/en"target="_blank" >
+					<img class="ImageSlide" style="width:105%;border: 6px solid #101540;" src="Image/ONG.png" alt="Gabon's ONG" />
+				</a>
+				<div class="textBlanc">ONG 3 : Soutenir l'Education au Gabon</div>
 			</div>
 
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>

@@ -208,7 +208,7 @@ img {
 	position: relative;
 	left: 22%;
 	right: auto;
-	border: 6px solid #101540;
+	border: none;
 }
 
 /* Next & previous buttons */
@@ -278,7 +278,7 @@ img {
 	margin: 0 2px;
 	background-color: #bbb;
 	border-radius: 50%;
-	border: 2px #101540;
+	/*border: 2px #101540;*/
 	display: inline-block;
 	transition: background-color 0.6s ease;
 }
@@ -331,7 +331,7 @@ img {
 	background-color: grey;
 	text-align: center;
 	color: black;
-	border: 6px solid #101540;
+	/*border: 6px solid #101540;*/
 	padding: 10px;
 	margin: 45px;
 }
@@ -395,3 +395,9 @@ tr:hover {
 	color: red;
 	font-style: Tahoma;
 }
+/*
+.ImageSlide {
+	width: 100%;
+	border: 5px solid red;
+	border-radius: 50%;
+}*/

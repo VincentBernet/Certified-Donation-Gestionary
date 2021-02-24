@@ -24,7 +24,7 @@
     require_once "T.pdo.php";
 
     // We call our personnal librairy
-    require_once "utilitaire.php";
+    require_once "Utilitaire.php";
     
     if(isset($_POST["FirstName"])&&isset($_POST["Email"])&&isset($_POST["Password"])&&isset($_POST["Password2"]))
     {

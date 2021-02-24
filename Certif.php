@@ -16,7 +16,7 @@
     		require_once "T.pdo.php";
 
     		// We call our personnal librairy
-			require_once "utilitaire.php";
+			require_once "Utilitaire.php";
 		?>
 
 		<!-- We call our Header -->
@@ -29,20 +29,20 @@
 		<br><br><br>
 		<div class="slideshow-container">
 			<div class="mySlides fade">
-				<div class="numbertext1">1/3</div>
-				<img src="Image/Certif3.jpg" style="width: 100%" />
+				<div class="numbertext">1/3</div>
+				<img src="Image/Certif3.jpg" style="width: 100%;border: 6px solid #101540;" />
 				<div class="text"></div>
 			</div>
 
 			<div class="mySlides fade">
 				<div class="numbertext">2/3</div>
-				<img src="Image/Certif.jpg" style="width: 100%" />
+				<img src="Image/Certif.jpg" style="width: 100%;border: 6px solid #101540;" />
 				<div class="text"></div>
 			</div>
 
 			<div class="mySlides fade">
 				<div class="numbertext">3/3</div>
-				<img src="Image/Certif2.jpg" style="width: 100%" />
+				<img src="Image/Certif2.jpg" style="width: 100%;border: 6px solid #101540;" />
 				<div class="textBlanc"></div>
 			</div>
 
