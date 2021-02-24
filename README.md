@@ -21,7 +21,7 @@ Nous savons qu’il existe actuellement des requêtes de dons numériques capabl
 
 ---
 
-## Installation
+## Installation Local Optionnel (déjà en ligne)
 
 Premièrement vous avez besoin d'une plateforme de serveur local comme MAMP ou XAMP <br /><br />
 1] Telecharger le dossier complet dans votre dossier "htodcs" du serveur local <br />
