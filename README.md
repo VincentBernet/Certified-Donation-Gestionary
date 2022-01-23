@@ -14,9 +14,9 @@ Nous savons qu’il existe actuellement des requêtes de dons numériques capabl
 
 ## Table des Matières 
 
-- [Fonctionnalités](#features)
-- [Installation](#installation)
-- [Licence](#licence)
+- **[Fonctionnalités](#features)**
+- **[Installation en local](#installation)**
+- **[Licence](#licence)**
 
 ---
 <a name='features'></a>
