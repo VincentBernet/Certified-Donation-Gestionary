@@ -1,9 +1,9 @@
 # GDC Gestionnaire de Don Certifié
 
-Cette application est encore en phase de prototype : 
+Cette application est resté en phase de prototype et a été réalisé lors d'un projet académique, (suivre ce **[lien](http://certified-donation-gestionary.epizy.com/)** pour la tester) : 
 
 Nous souhaitons, par ce projet, aider les associations humanitaires à se développer correctement. Pour cela nous souhaitons résoudre un problème en particulier lié à la réception des dons pour les associations d’aide humanitaire par des particuliers par le biais du numérique. 
-Nous savons qu’il existe actuellement des requêtes de dons numériques capables de récolter les dons à travers des moyens de payement en ligne. En conséquence, l’objectif sera d’améliorer les services de dons en ligne en créant nous mêmes une nouvelle plateforme numérique capable de répondre aux besoins des associations d’aide humanitaire. 
+Nous savons qu’il existe actuellement des requêtes de dons numériques capables de récolter les dons à travers des moyens de payement en ligne. En conséquence, l’objectif sera d’améliorer les services de dons en ligne en créant nous mêmes une nouvelle plateforme numérique plus sécurisée et répondant aux certifications et normes en vigueur dans l'Europe, chaque association sera scrupuleusement évaluée sur ces normes et sera ensuite intégré ou non à notre plateforme. Celle-ci sera alors capable de répondre aux besoins des associations d’aide humanitaire et à la volonté de transparence des donnateurs lors de leurs actes de charité. 
 
 
 ***Vidéo de présentation du projet***
@@ -12,24 +12,35 @@ Nous savons qu’il existe actuellement des requêtes de dons numériques capabl
 
 ---
 
-## Table of Contents 
+## Table des Matières 
 
-- [Installation](#installation)
 - [Fonctionnalités](#features)
-- [Equipe](#team)
-- [Contact](#Contact)
+- [Installation](#installation)
+- [Licence](#licence)
 
 ---
+<a name='features'></a>
+## Fonctionnalités
+Sur cette application, voici les principales fonctionnalités implémentées :
+ - Complete CRUD application
+ - Login/Register/Logout possibility linked to our DataBase
+ - Posibility to read/edit/delete only the profile created your own userprofile. 
+ - Data validation all over our forms (via php and some java alert), using Session to set flash message
+ - All forms use Session to avoid reloading thepage and get anoying pops up and ressending data to our database with only Post.
+ - Night mode button using Java script to change css of our whole website, using changment of CSS on the DOM and saving those on localstorage
+ - Html and CSS injections protection via Html entities and using pdo to make the link beetween our page and our DataBase
 
-## Installation Local Optionnel (déjà en ligne)
+---
+<a name='installation'></a>
+## Installation Local Optionnelle (déjà en ligne)
 
 Premièrement vous avez besoin d'une plateforme de serveur local comme MAMP ou XAMP <br /><br />
-1] Telecharger le dossier complet dans votre dossier "htodcs" du serveur local <br />
+1] Télécharger le dossier complet dans votre dossier "htodcs" du serveur local <br />
 2] Aller sur votre page PHPmyAdmins et créer une nouvelle database nommée GDC <br />
-(Vous pouvez copié coller le script Sql suivant : CREATE DATABASE GDC DEFAULT CHARACTER SET utf8 ;) <br />
-3] Go in Sql interface of this DataBase and copy paste the following Sql querrys : <br />
+(Vous pouvez copier-coller le script Sql suivant : CREATE DATABASE GDC DEFAULT CHARACTER SET utf8 ;) <br />
+3] Aller dans l'interface sql de cette DataBase et copier-coller les querrys SQL qui suivent : <br />
 
- ```
+ ``` sql
 --
 -- Table structure for table `don`
 --
@@ -108,51 +119,19 @@ ALTER TABLE `don`
   ADD CONSTRAINT `don_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 ```
-
-4] Only if you are on Mac : Go to pdo.php file and change the port number to 8808 <br/>
+4] Seulement si vous êtes sur Mac : allez dans le fichier pdo.php et changez le numéro de port en 8808 <br/>
 
 &nbsp;&nbsp;&nbsp; ![Pdo.php](Ressource-Read-Me/pdo.JPG)
 
-5] Run the index.php file on your browser, if no SQL error's statement pop everything work !
-If there is some error check your database and your port number.
-
-## Features
-On this application i implemetended multiples featurs such as 
- - Login/Register/Logout possibility linked to our DataBase
- - Complete CRUD application
- - Posibility to read/edit/delete only the profile created your own userprofile. 
- - Data validation all over our forms (via php and some java alert), using Session to set flash message
- - All forms use Session to avoid reloading thepage and get anoying pops up and ressending data to our database with only Post.
- - Night mode button using Java script to change css of our whole website, using changment of CSS on the DOM and saving those on localstorage
- - Html and CSS injections protection via Html entities and using pdo to make the link beetween our page and our DataBase
-
-
----
-## Team
-
-> Whole application was made by me when i was getting a coursera specialisation on web developpment :
-
- <a href="https://github.com/VincentBernet.com" target="_blank">**Software Engineering Student**</a> |
-|:---:|
-| [![FVCproductions](https://avatars3.githubusercontent.com/u/54962581?s=300)](https://github.com/VincentBernet.com)    |
-| <a target="_blank" rel="noopener noreferrer" href="https://github.com/VincentBernet">`github.com/BernetProductions`</a> |
-
-
-
+5] Run le fichier index.php sur votre moteur de recherche, s'il n'y a pas de message d'erreur SQL alors tout fonctionne !
+S'il subsiste une erreur de ce type, vérifier votre database et votre numéro de port.
 
 ---
 
-## Contact
-- Don't hesitate to contact me on Github or on Linkedin, i'm currently seeking an intership around Paris for April 2021 :
-
-[![Linkedin](https://thelinkedinman.com/wp-content/uploads/2016/02/View-my-LinkedIn-profile-image-3-300x140.png)](https://www.linkedin.com/in/vincent-bernet-028a64193/)
-
-
----
-
+<a name='licence'></a>
 ## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2021 © <a href="https://www.linkedin.com/in/vincent-bernet-028a64193/" target="_blank">Bernet  Vincent</a>.
+- Copyright 2021 ©  **<a href="https://www.linkedin.com/in/k%C3%A9vin-thanh-le-floch/" target="_blank">Le FLOCH Kevin</a>, <a href="https://www.linkedin.com/in/vincent-bernet/" target="_blank">Bernet Vincent Marie</a>, <a href="https://www.linkedin.com/in/jean-pierre-tran/" target="_blank">Tran Jean-Pierre</a>, <a href="https://www.linkedin.com/in/theo-bedouet/" target="_blank">Bedouet Théo</a>, <a href="https://www.linkedin.com/in/gninhinlifanguy-siedou-moustapha-coulibaly-79201a197/" target="_blank">Coulibaly Siedou Moustapha</a>**.
